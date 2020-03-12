@@ -34,8 +34,13 @@
 
   <script src="{{ "/js/prism.js" | prepend: site.baseurl }}"></script>
   <script>
-    Prism.config({
-      'auto-line-numbers': true
-    });
+    window.onload = function () {
+      var preTags = document.getElementsByTagName('pre'),
+        len = preTags !== null ? preTags.length : 0,
+        i = 0;
+      for (i; i < len; i++) {
+        preTags[i].className += ' line-numbers';
+      }
+    }
   </script>
 </footer>

@@ -28,7 +28,6 @@ twitter_username: KiarashSz
 github_username: KiarashS
 permalink: /:year/:month/:day/:title.html
 google_analytics: UA-49590121-6
-highlighter: none
 
 # Build settings
 theme: minima

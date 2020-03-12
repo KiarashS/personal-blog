@@ -33,6 +33,7 @@ google_analytics: UA-49590121-6
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-last-modified-at
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to

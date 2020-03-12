@@ -2,7 +2,8 @@
 title: Welcome to Jekyll!
 layout: post
 date: '2020-03-10 16:13:36 +0330'
-categories: jekyll update
+categories: blogging
+tags: blog start
 comments: true
 ---
 

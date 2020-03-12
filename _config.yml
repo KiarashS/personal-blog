@@ -52,3 +52,4 @@ plugins:
 #   - vendor/ruby/
 
 permalink: /:year/:month/:day/:title.html
+google_analytics: UA-49590121-6

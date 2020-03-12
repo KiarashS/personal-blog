@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Kiarash Soleimanzadh
+title: Kiarash's Blog
 email: kiarash.s@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Stories from a web developer
@@ -26,6 +26,8 @@ baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://blog.kiarash.pro' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: KiarashSz
 github_username: KiarashS
+permalink: /:year/:month/:day/:title.html
+google_analytics: UA-49590121-6
 
 # Build settings
 theme: minima
@@ -50,6 +52,3 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-
-permalink: /:year/:month/:day/:title.html
-google_analytics: UA-49590121-6

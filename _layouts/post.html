@@ -23,13 +23,15 @@ layout: default
     {{ content }}
   </div>
 
-  <div>
+  {% if page.last_modified_at > page.date %}
+  <div style="color:#998; padding-bottom: 2rem;">
     Updated:
-    <span style="color: gainsboro;">
+    <span>
       {%- assign modified_date_format = site.minima.date_format | default: "%b %-d, %Y"
-      -%} {{ page.last_modified_at | date: modified_date_format }}
+        -%} {{ page.last_modified_at | date: modified_date_format }}
     </span>
   </div>
+  {% endif %}
 
   {%- include hyvor_comments.html -%}
 

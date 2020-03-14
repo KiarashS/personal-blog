@@ -26,9 +26,11 @@ description: "asdasd asd sadsa dasd"
       {% endfor %}
     </p>
   </header>
-
-  {% include toc.html html=content id="markdown-toc" %}
   
+  {% if page.toc %}
+    {% include toc.html html=content id="markdown-toc" %}
+  {% endif %}
+
   <div class="post-content e-content p-capitalize" itemprop="articleBody">
     {{ content }}
   </div>

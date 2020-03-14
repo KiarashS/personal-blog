@@ -105,6 +105,7 @@ defaults:
     values:
       layout: 'post'
       comments: true
+      page: true
   - scope:
       path: ''
       type: 'pages'

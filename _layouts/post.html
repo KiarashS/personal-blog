@@ -1,6 +1,5 @@
 ---
 layout: default
-description: "asdasd asd sadsa dasd"
 ---
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
@@ -13,22 +12,22 @@ description: "asdasd asd sadsa dasd"
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
         -%} {{ page.date | date: date_format }}
       </time>
-      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">| by {{ site.author }} </span></span>
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">| by {{ site.author }}
+        </span></span>
       {%- if page.author -%} •
       <!-- <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card"
           itemprop="name">{{ page.author }}</span></span> -->
       {%- endif -%}
       {% if page.categories.size > 0 %} | on{% endif %}
       {% for category in page.categories %}
-      <a
-        href='{{ site.baseurl }}/categories/#{{ category | replace: ' ', '-' | url_encode }}'>{{ category }}</a>
+      <a href='{{ site.baseurl }}/categories/#{{ category | replace: ' ', '-' | url_encode }}'>{{ category }}</a>
       {%- unless forloop.last -%}, {%- endunless -%}
       {% endfor %}
     </p>
   </header>
 
   {% if page.toc %}
-    {% include toc.html html=content id="markdown-toc" %}
+  {% include toc.html html=content id="markdown-toc" %}
   {% endif %}
 
   <div class="post-content e-content p-capitalize" itemprop="articleBody">
@@ -39,8 +38,7 @@ description: "asdasd asd sadsa dasd"
   {% if page.tags.size > 0 %}
   <div style="padding-top: 0.5rem;">
     {% for tag in page.tags %}
-    <a href="{{ site.baseurl }}/tags/#{{ tag | replace: ' ', '-' | url_encode }}"
-      class="post-tag no-text-decoration">
+    <a href="{{ site.baseurl }}/tags/#{{ tag | replace: ' ', '-' | url_encode }}" class="post-tag no-text-decoration">
       {{- tag -}}
     </a>
     {% endfor %}

@@ -1,0 +1,17 @@
+<div class="post-navigation">
+  {% if page.previous.url %}
+  <a href="{{ site.baseurl }}{{ page.previous.url }}" class="prev">
+    <p>« {{ page.previous.title }}</p>
+  </a>
+  {% else %}
+  <span></span>
+  {% endif %}
+
+  {% if page.next.url %}
+  <a href="{{ site.baseurl }}{{page.next.url}}" class="next">
+    <p>{{ page.next.title }} »</p>
+  </a>
+  {% else %}
+  <span></span>
+  {% endif %}
+</div>

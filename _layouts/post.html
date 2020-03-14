@@ -1,5 +1,6 @@
 ---
 layout: default
+description: "asdasd asd sadsa dasd"
 ---
 
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
@@ -12,27 +13,61 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y"
         -%} {{ page.date | date: date_format }}
       </time>
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">| by {{ site.author }} </span></span>
       {%- if page.author -%} •
-      <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card"
-          itemprop="name">{{ page.author }}</span></span>
+      <!-- <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card"
+          itemprop="name">{{ page.author }}</span></span> -->
       {%- endif -%}
+      {% if page.categories.size > 0 %} | on{% endif %}
+      {% for category in page.categories %}
+      <a
+        href='{{ site.baseurl }}/categories/#{{ category | replace: ' ', '-' | downcase | url_encode }}/'>{{ category }}</a>
+      {%- unless forloop.last -%}, {%- endunless -%}
+      {% endfor %}
     </p>
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
+  {% include toc.html html=content id="markdown-toc" %}
+  
+  <div class="post-content e-content p-capitalize" itemprop="articleBody">
     {{ content }}
   </div>
 
-  {% if page.last_modified_at > page.date %}
+  <!-- Tags -->
+  {% if page.tags.size > 0 %}
+  <div style="padding-top: 0.5rem;">
+    {% for tag in page.tags %}
+    <a href="{{ site.baseurl }}/tags/#{{ tag | replace: ' ', '-' | downcase | url_encode }}/"
+      class="post-tag no-text-decoration">
+      {{- tag -}}
+    </a>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+
+  <!-- {% if page.last_modified_at > page.date %}
   <div style="color:#998; padding-bottom: 2rem;">
     Updated:
     <span>
       {{ page.last_modified_at | date: date_format }}
     </span>
   </div>
+  {% endif %} -->
+  {% if page.seo.date_modified > page.date %}
+  <div style="color:#998; padding-bottom: 2rem;">
+    Updated:
+    <span>
+      {{ page.seo.date_modified | date: date_format }}
+    </span>
+  </div>
   {% endif %}
 
+  {% include post-nav.html %}
+
   {%- include hyvor_comments.html -%}
+
+  {% include related-posts.html %}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

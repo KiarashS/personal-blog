@@ -24,6 +24,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   Stories from a web developer
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://blog.kiarash.pro' # the base hostname & protocol for your site, e.g. http://example.com
+cv_url: 'https://www.kiarash.pro'
+author: 'Kiarash Soleimanzadeh'
 twitter_username: KiarashSz
 github_username: KiarashS
 google_analytics: UA-49590121-6
@@ -32,8 +34,8 @@ google_analytics: UA-49590121-6
 theme: minima
 plugins:
   - jekyll-feed
-  - jekyll-last-modified-at
-  - jekyll-archives
+  - jekyll-sitemap
+  - jekyll-paginate
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -54,16 +56,60 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-jekyll-archives:
-  enabled: 'all'
-  layouts:
-    year: year-archive
-    month: month-archive
-    day: day-archive
-    category: category-archive
-    tag: tag-archive
+# jekyll-archives:
+#   enabled: 'all'
+#   layouts:
+#     year: year-archive
+#     month: month-archive
+#     day: day-archive
+#     category: category-archive
+#     tag: tag-archive
 
 markdown: kramdown
 kramdown:
   syntax_highlighter_opts:
     disable: true
+
+compress_html:
+  clippings: all
+  comments: ['<!-- ', ' -->']
+  endings:
+    [
+      html,
+      head,
+      body,
+      dt,
+      dd,
+      rt,
+      rp,
+      optgroup,
+      option,
+      colgroup,
+      caption,
+      thead,
+      tbody,
+      tfoot,
+      tr,
+      td,
+      th,
+    ]
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
+
+defaults:
+  - scope:
+      path: '' # an empty string here means all files in the project
+      type: 'posts' # previously `post` in Jekyll 2.2.
+    values:
+      layout: 'post'
+      comments: true
+  - scope:
+      path: ''
+      type: 'pages'
+    values:
+      layout: 'page'
+
+paginate: 6
+paginate_path: /page:num/

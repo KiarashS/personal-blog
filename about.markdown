@@ -1,7 +1,8 @@
 ---
 title: About
 layout: page
-permalink: "/about/"
+permalink: '/about/'
+visible_in_header: true
 ---
 
 My name is Kiarash Soleimanzadeh (spelled in Persian as کیارش سلیمان زاده). I was born in Hamedan, Iran in March 1990.

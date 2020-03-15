@@ -7,7 +7,7 @@ visible_in_header: true
 
 <!-- Html Elements for Search -->
 <div id="search-container">
-<input type="text" id="search-input" style="width: 35%; padding: 8px 6px; margin: 8px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;" placeholder="search...">
+<input type="text" id="search-input" style="width: 50%; padding: 8px 6px; margin: 8px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box;" placeholder="search...">
 <ul id="results-container" style="margin: 0;"></ul>
 </div>
 

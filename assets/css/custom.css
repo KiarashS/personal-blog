@@ -85,6 +85,15 @@ article.post>div.p-capitalize>p:first-child:first-letter {
   padding-left: 3px;
 }
 
+article.post>div.post-content h1,
+article.post>div.post-content h2,
+article.post>div.post-content h3,
+article.post>div.post-content h4,
+article.post>div.post-content h5,
+article.post>div.post-content h6 {
+  margin-top: 30px;
+}
+
 #markdown-toc {
   display: inline-block;
   border: 1px solid #d0d0d0;

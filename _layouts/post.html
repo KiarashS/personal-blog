@@ -65,11 +65,11 @@ layout: default
 
   {% include post-nav.html %}
 
+  {% include related-posts.html %}
+
   {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
-  {%- endif -%}
-  
-  {% include related-posts.html %}
+  {%- endif -%}  
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

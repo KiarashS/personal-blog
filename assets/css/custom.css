@@ -3,6 +3,10 @@
   background: #60c17d
 }
 
+.wrapper {
+  box-sizing: content-box;
+}
+
 .embed-container {
   position: relative;
   padding-bottom: 56.25%;

@@ -133,3 +133,10 @@ article.post>div.post-content h6 {
 .pagination {
   text-align: center;
 }
+
+img.emoji {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  margin-bottom: 0.25em;
+}

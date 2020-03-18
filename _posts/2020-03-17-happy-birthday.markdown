@@ -12,7 +12,7 @@ Happy birthday!:birthday: Today is my birthday `(March 17, 2020)` and I’m 30 y
 
 My blog powered by [jekyll][jekyll] and hosted in [Github Pages][github-pages].
 
-I will share my stories and experiences with you any time I haven't busy. Go ahead :muscle:
+I will share my stories and experiences with you any time I wasn't busy. Go ahead :muscle:
 
 [jekyll]: https://jekyllrb.com/
 [github-pages]: https://pages.github.com/

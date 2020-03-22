@@ -68,8 +68,12 @@ layout: default
   {% include related-posts.html %}
 
   {%- if site.disqus.shortname -%}
+    {%- include hyvor_comments.html -%}
+  {%- endif -%}
+
+  <!-- {%- if site.disqus.shortname -%}
     {%- include disqus_comments.html -%}
-  {%- endif -%}  
+  {%- endif -%} -->
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

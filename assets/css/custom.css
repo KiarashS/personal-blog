@@ -1,6 +1,6 @@
 ::selection {
   color: #fff;
-  background: #60c17d
+  background: #60c17d;
 }
 
 .wrapper {
@@ -62,14 +62,14 @@ pre[class*='language-'] {
   min-width: 2rem;
   text-align: center;
   background: rgba(0, 0, 0, 0.08);
-  border-radius: .34rem;
-  padding: 0 .4rem;
+  border-radius: 0.34rem;
+  padding: 0 0.4rem;
   color: #818182;
   line-height: 1.6rem;
 }
 
 .post-tag:not(:first-child) {
-  margin-left: .2rem;
+  margin-left: 0.2rem;
 }
 
 .post-tag:hover {
@@ -78,7 +78,7 @@ pre[class*='language-'] {
   color: #d2603a;
 }
 
-article.post>div.p-capitalize>p:first-child:first-letter {
+article.post > div.p-capitalize > p:first-child:first-letter {
   color: #66bb6a;
   float: left;
   font-family: josefin sans, sans-serif;
@@ -89,12 +89,12 @@ article.post>div.p-capitalize>p:first-child:first-letter {
   padding-left: 3px;
 }
 
-article.post>div.post-content h1,
-article.post>div.post-content h2,
-article.post>div.post-content h3,
-article.post>div.post-content h4,
-article.post>div.post-content h5,
-article.post>div.post-content h6 {
+article.post > div.post-content h1,
+article.post > div.post-content h2,
+article.post > div.post-content h3,
+article.post > div.post-content h4,
+article.post > div.post-content h5,
+article.post > div.post-content h6 {
   margin-top: 30px;
 }
 
@@ -107,7 +107,7 @@ article.post>div.post-content h6 {
 }
 
 #markdown-toc:before {
-  content: "Contents";
+  content: 'Contents';
   font-weight: 700;
   color: #777;
 }
@@ -145,7 +145,7 @@ img.emoji {
   margin: 0;
 }
 
-span.username {
+ul.social-media-list svg {
   box-sizing: content-box;
 }
 

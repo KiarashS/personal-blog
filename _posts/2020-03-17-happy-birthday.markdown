@@ -4,7 +4,7 @@ date: '2020-03-17 10:04:36 +0330'
 categories: Blog
 ---
 
-Happy birthday!:birthday: Today is my birthday `(March 17, 2020)` and I’m 30 years old. Fortunately, this is the good news, but unfortunately the bad story is Coronavirus disease (COVID-19), and we hear so many bad news around the globe about this virus :pensive:. This year with the outbreak of the virus and Home Quarantine, I acquire enough time to bring up my blog and start writing.
+Happy birthday!:birthday: Today is my birthday (March 17, 2020) and I’m 30 years old. Fortunately, this is the good news, but unfortunately the bad story is Coronavirus disease (COVID-19), and we hear so many bad news around the globe about this virus :pensive:. This year with the outbreak of the virus and Home Quarantine, I acquire enough time to bring up my blog and start writing.
 
 <p class="text-center">
     <img src="https://raw.githubusercontent.com/KiarashS/BlogFiles/master/Images/30-happy-birthday.jpg" title="Happy Birthday!" alt="Happy Birthday" class="inline-block" />

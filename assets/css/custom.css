@@ -144,3 +144,11 @@ img.emoji {
   padding: 0;
   margin: 0;
 }
+
+span.username {
+  box-sizing: content-box;
+}
+
+span.menu-icon svg {
+  margin: auto;
+}

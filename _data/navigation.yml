@@ -1,0 +1,9 @@
+main:
+  - title: 'Home'
+    url: /
+  - title: 'CV'
+    url: https://www.kiarash.pro
+  - title: 'Categories'
+    url: /categories/
+  - title: 'Tags'
+    url: /tags/

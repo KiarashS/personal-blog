@@ -21,9 +21,9 @@
 title: Kiarash's Blog
 email: kiarash.s@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Stories from a web developer
-baseurl: '' # the subpath of your site, e.g. /blog
-url: 'https://blog.kiarash.pro' # the base hostname & protocol for your site, e.g. http://example.com
+  Stories from a developer
+baseurl: '/blog' # the subpath of your site, e.g. /blog
+url: 'https://www.kiarash.pro' # the base hostname & protocol for your site, e.g. http://example.com
 cv_url: 'https://www.kiarash.pro'
 author: 'Kiarash Soleimanzadeh'
 twitter_username: KiarashSz
@@ -31,12 +31,15 @@ github_username: KiarashS
 google_analytics: UA-49590121-6
 
 # Build settings
-theme: minima
+#theme: minima
+remote_theme: 'mmistakes/minimal-mistakes@4.19.1'
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-paginate
   - jemoji
+  - jekyll-include-cache
+  - jekyll-gist
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
@@ -100,20 +103,28 @@ compress_html:
     envs: []
 
 defaults:
+  # _posts
   - scope:
       path: '' # an empty string here means all files in the project
       type: 'posts' # previously `post` in Jekyll 2.2.
     values:
-      layout: 'post'
+      layout: single
       comments: true
       toc: false
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
+  # _pages
   - scope:
-      path: ''
+      path: '_pages'
       type: 'pages'
     values:
-      layout: 'page'
+      layout: single
+      author_profile: true
 
-paginate: 6
+paginate: 5
 paginate_path: /page:num/
 
 # Disqus Comments
@@ -124,3 +135,93 @@ disqus:
 
 hyvor:
   website_id: 285
+
+minimal_mistakes_skin: "contrast"
+locale: "en"
+title_separator: "|"
+subtitle: "Stories from a developer"
+name: "Kiarash Soleimanzadeh"
+repository: "KiarashS/personal-blog"
+# teaser: "https://raw.githubusercontent.com/KiarashS/BlogFiles/master/Statics/teaser2.jpg"
+logo: "https://raw.githubusercontent.com/KiarashS/BlogFiles/master/Statics/ks2.png"
+masthead_title: "Kiarash Soleimanzadeh"
+search: true
+comments:
+  provider: "custom"
+
+twitter:
+  username: "KiarashSz"
+
+google_site_verification: "dmDgFDL5MaTjdb7Zh-VIQuZuwRxVcTfp3cjYnmLmlug"
+
+social:
+  type:  # Person or Organization (defaults to Person)
+  name:  # If the user or organization name differs from the site's name
+  links:
+    - "https://twitter.com/KiarashSz"
+    - "https://www.linkedin.com/in/kiarash-soleimanzadeh-4a767351"
+    - "https://github.com/KiarashS"
+
+analytics:
+  provider: "google-universal"
+  google:
+    tracking_id: "UA-49590121-6"
+    anonymize_ip: false # default
+
+author:
+  name     : "Kiarash's Blog"
+  avatar   : "https://raw.githubusercontent.com/KiarashS/BlogFiles/master/Statics/me.jpg"
+  bio      : "Researcher/Developer/CEO"
+  location : "Iran"
+  links:
+    - label: "CV"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.kiarash.pro"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/KiarashSz"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/KiarashS"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/kiarash-soleimanzadeh-4a767351"
+
+footer:
+  links:
+    - label: "Kiarash Soleimanzadeh"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.kiarash.pro"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/KiarashSz"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/KiarashS"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/kiarash-soleimanzadeh-4a767351"
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+after_footer_scripts:
+  - /assets/js/newwindowfix.js
+
+breadcrumbs: false  # disabled by default
+breadcrumb_home_label : "Home"
+breadcrumb_separator  : "/"
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+include:
+  - _pages

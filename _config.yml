@@ -163,7 +163,7 @@ social:
     - "https://github.com/KiarashS"
 
 analytics:
-  provider: "google-tag"
+  provider: "google-gtag"
   google:
     tracking_id: "UA-49590121-6"
     anonymize_ip: false # default

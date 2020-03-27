@@ -1,4 +1,3 @@
-{%- if page.comments != false and jekyll.environment == "production" -%}
 <div id="hyvor-talk-view"></div>
 <script type="text/javascript">
   var HYVOR_TALK_WEBSITE = {{site.hyvor.website_id}};
@@ -8,4 +7,3 @@
   };
 </script>
 <script async type="text/javascript" src="//talk.hyvor.com/web-api/embed"></script>
-{%- endif -%}

@@ -116,6 +116,9 @@ defaults:
       comments: true
       share: true
       related: true
+      header:
+        overlay_image: https://raw.githubusercontent.com/KiarashS/BlogFiles/master/Statics/teaser.jpg
+        overlay_filter: 0.5 # same as adding an opacity of 0.5 to a black background      
   # _pages
   - scope:
       path: '_pages'

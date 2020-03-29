@@ -7,4 +7,4 @@ header:
   overlay_image: https://raw.githubusercontent.com/KiarashS/BlogFiles/master/Images/supercomputer.jpg
 link: https://www.whitehouse.gov/briefings-statements/white-house-announces-new-partnership-unleash-u-s-supercomputing-resources-fight-covid-19/
 ---
-Our industry, computer science, is the most influential industry. Even in medicine! The future belongs to artificial intelligence :muscle::heart:
+Our industry, computer science, is the most influential industry. Others depend on us, even medical! The future belongs to artificial intelligence :muscle::heart:

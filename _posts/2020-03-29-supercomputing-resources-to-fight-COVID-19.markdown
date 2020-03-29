@@ -1,7 +1,7 @@
 ---
 title: "White House: Supercomputing Resources to Fight COVID-19"
 date: '2020-03-29 11:27:36 +0330'
-categories: [computer science]
+categories: [computer science, artificial intelligence]
 tags: [link]
 header:
   overlay_image: https://raw.githubusercontent.com/KiarashS/BlogFiles/master/Images/supercomputer.jpg

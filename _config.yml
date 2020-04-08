@@ -142,7 +142,7 @@ hyvor:
 minimal_mistakes_skin: "contrast"
 locale: "en"
 title_separator: "|"
-subtitle: "Stories from a researcher/developer/CEO"
+subtitle: "Who makes the impossible, possible"
 name: "Kiarash Soleimanzadeh"
 repository: "KiarashS/personal-blog"
 # teaser: "https://raw.githubusercontent.com/KiarashS/BlogFiles/master/Statics/teaser2.jpg"
@@ -174,7 +174,7 @@ analytics:
 author:
   name     : "Kiarash's Blog"
   avatar   : "https://raw.githubusercontent.com/KiarashS/BlogFiles/master/Statics/me.jpg"
-  bio      : "Who makes the impossible, possible"
+  bio      : "Stories from a researcher/developer/CEO"
   location : "Iran"
   links:
     - label: "CV"

@@ -21,7 +21,7 @@
 title: Kiarash's Blog
 email: kiarash.s@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Stories from a developer
+  Stories from a researcher/developer
 baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://blog.kiarash.pro' # the base hostname & protocol for your site, e.g. http://example.com
 cv_url: 'https://www.kiarash.pro'
@@ -142,7 +142,7 @@ hyvor:
 minimal_mistakes_skin: "contrast"
 locale: "en"
 title_separator: "|"
-subtitle: "Stories from a developer"
+subtitle: "Stories from a researcher/developer"
 name: "Kiarash Soleimanzadeh"
 repository: "KiarashS/personal-blog"
 # teaser: "https://raw.githubusercontent.com/KiarashS/BlogFiles/master/Statics/teaser2.jpg"

@@ -139,7 +139,7 @@ disqus:
 hyvor:
   website_id: 285
 
-minimal_mistakes_skin: "contrast"
+minimal_mistakes_skin: "air"
 locale: "en"
 title_separator: "|"
 subtitle: "Who makes the impossible, possible"
